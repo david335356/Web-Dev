@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>	Saigon Cafe </title>
+
+		<style>
+			body{ 
+				background-color: pink;
+			}
+			div {
+				color:rgb(169, 87, 50);
+				margin-left: 20% ; 
+				margin-right: 20% ; 
+				padding-left: 5em;
+				padding-right: 5em;
+				width: 70%;
+				float: left;
+			 }
+
+			img{
+				float:right;
+				width: 25%;
+				height: auto;
+				padding-right: 15em;
+				
+				
+			}
+		
+			h1, h2, form , nav{
+				text-align: center;
+			}
+			
+			ul{
+				color: darkgoldenrod;
+				margin-right: auto;
+				margin-left:auto;
+				max-width: 200px
+			}
+			ol{
+				color: black;
+				margin-right: auto;
+				margin-left: auto;
+				max-width: 400px;
+			}
+			form {
+				margin-right: auto;
+				margin-left: auto;
+				max-width:600px;
+			}
+			hr{
+				margin-left: 22%;
+				margin-right: 22%;
+			}
+			
+			nav{
+				background-color:rgb(169, 87, 50);
+				padding: .5em;
+				
+			}
+			a {
+				margin: 2em;
+				font-size: 20px;
+			}
+			nav{
+    background-color:rgb(169, 87, 50);
+    padding: .5em;
+    
+}
+			
+			
+			
+		
+			
+		</style>
+		
+	</head>
+	<body>
+		
+		<h1>
+			Welcome to Saigon Cafe 
+		</h1>
+
+		<nav>
+			<a href="4315_Lab2_dem5560.html">Home</a>
+			<a href="product_dem5560.html">Product</a>
+			<a href="contact_dem5560.html">Contact Us</a>
+		</nav>
+		<br>
+		<div><img src="coffeeVimg.jpg" alt="Vietnamese coffee" >
+			You have been selected to participate in our Customer Satisfaction Survey to further understand 
+			how we can improve how we can possibly make your time with us more worth while. 
+			Respond to the survey opinion statements based on your experiences with Saigon Cafe.  
+			To show our appreciation, we will send you a $10 Saigon Cafe eGift Certificate via e-mail.
+		
+		</div>
+		
+		
+
+		
+		
+		<br>
+
+		<hr>
+
+		<h2>
+			Personal Information
+		</h2>
+		<form action="post">
+
+		<table>
+
+		<tr>
+			<td>First Name: <input name = "fname" type="text" size = "20" maxlength = "20" required autofocus> 
+			Last Name: <input name = "lname" type= "text" size = "20" maxlength = "20" required autocomplete = off ></td>
+		</tr>
+		<tr class= "shove">
+			<td>Email Address: <input name = "email"
+				type= "email" 
+				size = "30" 
+				maxlength = "30" 
+				required
+				title = "Must be enter a valid email address"
+				autocomplete = off 
+				placeholder="For Example John@yourEmail.com">
+			</td>
+		</tr> 
+		<tr>
+			<td>Gender:
+			 Male <input name = "Gender" type = "radio" value = "Male" required> 
+			Female <input name = "Gender" type = "radio" value = "Female"> 
+			</td>
+		</tr>
+		<tr>
+			<td >Age Group:
+				<input name = "age" type = "radio" value = "Under 21" required> Under 21
+				<input name = "age" type = "radio" value = "21-40"> 21-40 
+				<input name = "age" type = "radio" value = "Over 40"> Over 40
+			</td>
+		</tr>
+
+		</table>
+		
+		
+		<hr>
+		<h2>
+			Please respond to the opinion statements using the follow scale:
+		</h2>
+		<ul>
+			<li>1 = strongly agree</li>
+			<li>2 = somewhat agree</li>
+			<li>3 = neither</li>
+			<li>4 = somewhat disagree</li>
+			<li>5 = strongly disagree</li>			
+		</ul>
+		
+			<ol>
+				<li>
+					<label for="firstQ">Saigon Cafe products are always fresh.</label> 
+						<select name="firstQ" id="firstQ">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+				</li>
+				<li> 
+					<label for="secondQ">Saigon Cafe products have an appealing aroma.</label> 
+					<select name="secondQ" id="secondQ">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</li>
+				<li><label for="thirdQ">Saigon Cafe products are reasonably priced.</label>
+					<select name="thirdQ" id="thirdQ">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</li>
+				<li>
+					<label for="fourthQ">Saigon Cafe products are of the highest quality.</label>
+					<select name="fourthQ" id="fourthQ">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</li>
+				<li>
+					<label for="fifthQ">Overall, I am very satisfied with Saigon Cafe products.</label>
+					<select name="fifthQ" id="fifthQ">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</li>
+			</ol>
+			
+			
+				<input type="submit" value = "Submit" >
+				<input type="reset" value="Reset">
+			
+			</form>
+	</body>
+</html>

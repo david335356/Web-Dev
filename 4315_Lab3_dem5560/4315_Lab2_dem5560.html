@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- IMPORTANT: 
+  Chrome does not support running certain JavaScript commands like those required for creating cookies. 
+  Therefore, you will need to add a Web Server "extension" for your cookie-related code to work properly.
+  You can get it from the following link:  
+  https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en
+-->
+    <head>
+      <meta charset="utf-8">
+      <title> Saigon Cafe </title>
+      <link rel="stylesheet" type = "text/css" href="4315_Lab2_dem5560.css">
+      
+     
+    
+     
+     
+     
+
+    </head>
+    <body>
+      <h1>Thank you for Choosing Saigon Cafe!</h1>
+      <nav>
+        <a href="4315_Lab2_dem5560.html">Home</a>
+        <a href="product_dem5560.html">Product</a>
+        <a href="contact_dem5560.html">Contact Us</a>
+      </nav>
+      <br>
+      <div>
+        <img src="coffeeVimg.jpg" alt="Vietnamese coffee">
+         Welcome to Saigon Cafe, we are delighted for you to come visit us.
+         We found our love for coffee growing up in a vietnamese home. We always had 
+         wanted to share our experince with others, people are used to food that reminds 
+         people of home, but we're here to try to show you what coffee from home should taste like. 
+         Our coffee mainly consists of hot brew, done in a slow drip fashion with condensed milk waiting at
+         the bottom of the cup. Providing a delicious and sweet but also strong coffee.
+      </div>
+      
+      <div>
+        <img id="image2Placement" src="coffee2img.jpg" alt="VietCoffee 2 img">
+         <p id="candy">Want a more personalized experince here at Saigon coffee?</p>
+        <p id="clickable" onclick="OnClickable()" style = "color: blue;"> Click here to provide your name</p>
+        <p id="hiddenMessage"> </p>
+      </div>
+      <script type="text/JavaScript">
+        var cName, cValue, c, expires;
+
+        function randomNumber()
+        {
+           //creating the random number using Math.random();
+           var randomValue = Math.random();
+          
+            //multiply by 10 as reuqested
+            randomValue = randomValue * 10;
+          
+            //rounding to nearest whole number with Math.round();
+            randomValue = Math.round(randomValue);
+          
+            //checks for the multiples of 5 using if statement
+            if(randomValue % 5 == 0)
+            {
+               //Displaying box
+               //var result = confirm("You have been randomly selected to participate in a customer satisfaction survey.");
+              let result = confirm("You have been randomly selected to participate in a customer satisfaction survey.");
+              if (result == true){
+                window.location.href = "4315_Lab1_dem5560.html";
+              }
+              
+            }     
+        }
+            
+        function createCookie(cName, cValue, exDays) //**************CREATE COOKIE*****************************
+        {
+          var d = new Date();
+          d.setTime(d.getTime() + (exDays * 24 * 60 * 60 * 1000));
+          expires = "expires="+d.toUTCString();
+          document.cookie = cName + "=" + cValue + ";" + expires ;
+        }
+  
+        function readCookie(cName) //**************READ COOKIE*****************************
+        {
+          //create an large heading on the page
+          //document.write("<h1 style = \"color:black; text-align:center; \" >Thank you for Choosing Saigon Cafe!</h1>") ;
+          
+          var keyName = cName + "=";
+          var decodedCookie = decodeURIComponent(document.cookie);
+          var cArray = decodedCookie.split(';');
+          for(var i = 0; i < cArray.length; i++) 
+          {
+            //loop through the array of key/value pairs from the cookie
+            c = cArray[i];
+            while (c.charAt(0) == ' ') 
+            {
+              c = c.substring(1);
+              //alert (c) ;
+            }
+            if (c.indexOf(keyName) == 0) 
+            {
+              return c.substring(keyName.length, c.length);
+            }
+          }
+          return "";
+        }
+
+        function resetClickable(){
+          if{confirm(prompt)}
+
+        }
+        function OnClickable(){ //**************function CLICKABLE*****************************
+          user = prompt("Please enter your name:", "");
+          if (user != "" && user != null) 
+            {
+              createCookie("username", user, 7); //the "7" indicates how many days it will take to expire 
+              var element = document.getElementById("hiddenMessage");
+              element.innerHTML = "Welcome " + user + " to Saigon Coffee we hope you enjoy your experience.";
+              setTimeout(randomNumber, 5000); //Setting 5000 = 5 seconds 
+              var x = document.getElementById("clickable");
+              x.style.display = "none"; 
+              var y = document.getElementById("candy");
+              y.style.display = "none"; 
+
+            }
+        }
+  
+        function checkCookie() //**************CHECK COOKIE*****************************
+        {
+          var user = readCookie("username");
+          
+          //if cookie exists, display welcome message
+          if (user == "") 
+          {
+            //***************************************************************************************************
+            //To delete the existing cookie for testing purposes, you can uncomment the following code:
+            //createCookie("userName", user, -1);
+            //***************************************************************************************************
+            
+            var x = document.getElementById("clickable");
+            x.style.display = "block"; 
+            //x.innerHTML = "Click here to provide your name";
+          } 
+          else 
+          {
+            var element = document.getElementById("hiddenMessage");
+              element.innerHTML = "Welcome "+ user + " to Saigon Coffee we hope you enjoy your experience." ;
+              setTimeout(randomNumber, 5000); //setings the function to activate after 5 seconds 
+              var x = document.getElementById("clickable");
+              x.style.display = "none"; 
+              var y = document.getElementById("candy");
+              y.style.display = "none"; 
+          }
+        }
+  
+        
+        checkCookie();
+       
+        
+        
+      
+      </script>
+
+    </body>
+</html>

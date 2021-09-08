@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>	Saigon Cafe </title>
+        <link rel="stylesheet" type = "text/css" href="product.css">
+        <link rel="stylesheet" type="text/css" href="WPEstyle.css">
+        
+    </head>
+    <body>
+        <h1>Saigon Cafe</h1>
+        <h2>Our Products</h2>
+        
+        <nav>
+			<a href="4315_Lab2_dem5560.html" id= "navSeperator">Home</a>
+			<a href="product_dem5560.html" id= "navSeperator">Product</a>
+			<a href="contact_dem5560.html" id= "navSeperator">Contact Us</a>
+        </nav>
+        <br>
+        <form action="#" style="text-align: center" id="myForm">
+            <div style="text-align: center; width: 90%;">
+            <br>
+            <p>
+            <table align="center">
+                <thead>
+                    <tr>
+                        <th><a id="sortID" href="#" style="text-decoration-line: underline; color: brown;">Product ID</a></th>
+                        <th><a></a></th>
+                        <th><a id="sortName" href="#" style="text-decoration-line: underline; color: brown">Product Name</a></th>
+                        <th><a id="sortDesc" href="#" style="text-decoration-line: underline; color: brown">Product Description</a></th>
+                        <th><a id="sortPrice" href="#" style="text-decoration-line: underline; color: brown">Product Price</a></th>
+                        <th><a id="sortQty" style="text-decoration-line: underline; color: brown">Quantity</a></th>
+                    </tr>
+                </thead>
+                (Double-Click the Column Headings to Sort)
+                <tbody id = "tbodyRows" style="color: black;">
+                </tbody>
+            </table>
+            </p>
+            </div>			
+            
+            <p style="width: 80%; text-align: right">
+                <input type="submit" value="Confirm" onclick = "confirmQty()">
+                <!--<input type="reset" value="Reset" onclick="resetClickable()"> -->
+                <button onclick="resetClickable()">Cancel</button>
+            </p>
+    
+            <script src="main.js"></script>
+    
+            
+            
+        </form>
+        
+    </body>
+
+
+</html>

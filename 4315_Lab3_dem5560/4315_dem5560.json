@@ -1,0 +1,72 @@
+[
+	{
+		"prodID": 1001, 
+		"prodImg": "prod1.jpg",
+		"prodName": "Base Ball tee Life Is Good After Coffee ",
+		"prodDesc": "With this shirt Life Is Good After Coffee its a perfect shirt for a not so hot day and a not so cold day.",
+		"prodPrice": "$15.99"
+	},
+	{
+		"prodID": 1002,
+		"prodImg": "prod2.jpg",
+		"prodName": "Graphic Tank Top",
+		"prodDesc": "With this Tank Top, it can perfectly show your love for coffee on a hot summer day.",
+		"prodPrice": "$14.95"
+	},
+	{
+		"prodID": 1003,
+		"prodImg": "prod3.jpg",
+		"prodName": "Black Hoodie Graphic Sloth",
+		"prodDesc": "Showing our love to sloths and coffee it can keep you warm when its sweater weather.",
+		"prodPrice": "$20.99"
+    },
+    {
+		"prodID": 1004, 
+		"prodImg": "prod4.jpg",
+		"prodName": "Cute Coffee Stickers",
+		"prodDesc": "Share your love by having these stickers displayed on your personal things.",
+		"prodPrice": "$5.95"
+	},
+	{
+		"prodID": 1005,
+		"prodImg": "prod5.jpg",
+		"prodName": "Galaxy Coffee Cup",
+		"prodDesc": "The perfect cup of coffee to enjoy your favorite cup of Saigon Coffee.",
+		"prodPrice": "$10.95"
+	},
+	{
+		"prodID": 1006,
+		"prodImg": "prod6.jpg",
+		"prodName": "Coffee Keychain",
+		"prodDesc": "Show your love for coffee by having these on your keys.",
+		"prodPrice": "$9.95"
+    },
+    {
+		"prodID": 1007, 
+		"prodImg": "prod7.jpg",
+		"prodName": "Coffee Cat Plushies (2 per order)",
+		"prodDesc": "Adopt these cute coffee cats home and enjoy your cup of coffee with them.",
+		"prodPrice": "$20.95"
+	},
+	{
+		"prodID": 1008,
+		"prodImg": "prod8.jpg",
+		"prodName": "Travel Coffee Mug",
+		"prodDesc": "You don't always have to be in one spot to enjoy a cup of a coffee when your always on the go.",
+		"prodPrice": "$11.95"
+	},
+	{
+		"prodID": 1009,
+		"prodImg": "prod9.jpg",
+		"prodName": "White Hoodie",
+		"prodDesc": "To enjoy a nice cold day with a perfect sweater to fit your mood.",
+		"prodPrice": "$15.95"
+    },
+    {
+		"prodID": 1010, 
+		"prodImg": "prod10.jpg",
+		"prodName": "Coffee Girl Patch",
+		"prodDesc": "Cute coffee girl patch that can you sew on your shirt, backpack, or jacket.",
+		"prodPrice": "$6.95"
+	}
+]
