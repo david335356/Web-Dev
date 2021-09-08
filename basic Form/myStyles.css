@@ -1,0 +1,32 @@
+/* Form Sample Styling */
+
+body
+{
+	font-family: Arial, sans-serif;
+}
+
+#mainDiv
+{
+	width: 800px;
+	margin: 50px auto 0px auto;  /* TRBL syntax */
+	text-align: left;
+	border: 1px solid gray;
+	padding: 1em;
+}
+
+.explanation
+{
+	font-size: 0.7em;
+	font-style: italic;
+}
+
+td
+{
+	vertical-align: top;
+}
+
+.formLabel
+{
+	text-align: right;
+	padding-right: 1em;
+}

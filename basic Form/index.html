@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms</title>
+  <meta name="keywords" content="keyword phrase, keyword phrase">
+  <meta name="description" content="description of page">
+  <link rel="stylesheet" href="myStyles.css">
+</head>
+
+<body>
+	<div id="mainDiv">
+		 <form method="post" action="https://www.jimlink.net/PHPStuff/testFormData.php">
+			<input type="hidden" name="emailAddress" value="david335356@gmail.com">
+			<table>
+				<tr>
+					<td class="formLabel">
+					 First Name:
+					</td>
+				
+					<td >
+						<input type="text" name="firstName" value="First Name" size="40" maxlength="50" required >
+					</td>
+				</tr>
+				<tr>
+					<td class="formLabel">
+					 Password:
+					</td>
+				
+					<td >
+						<input type="password" name="pwd" required >
+					</td>
+				</tr>
+				<tr>
+					<td class="formLabel" >
+					 Comments:
+					</td>
+				
+					<td >
+						<textarea name="comments" cols="50" rows="4" >
+					
+						</textarea>
+					</td>
+				</tr>
+				<tr>
+					<td class="formLabel" >
+						Profile Picture:
+					</td>
+				
+					<td >
+						<input type="file" name="profile" size="40">
+					</td>
+				</tr>
+				<tr>
+				<td>
+					Choose your favorite color:
+				</td>
+				<td>
+					<input type="radio" 
+							 name="FavoriteColor" 
+							 value="blue" required >Blue
+					  <br>
+					  <input type="radio" 
+							 name="FavoriteColor" 
+							 value="red">Red
+					  <br>
+					  <input type="radio" 
+							 name="FavoriteColor" 
+							 value="green">Green
+				</td>
+				</tr>
+				<tr>
+					<td>
+						Please tell us your favorite pet(s):
+					</td>
+					<td>
+					<input type="checkbox" 
+								 name="Pets[]" 
+								 value="dog" >Dog
+						  <br>
+						  <input type="checkbox" 
+								 name="Pets[]" 
+								 value="cat">Cat
+						  <br>
+						  <input type="checkbox" 
+								 name="Pets[]" 
+								 value="fish">Fish
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Favorite Tv Show(s) 
+					</td>
+					<td>
+					    <select name="TV[]" size="1">
+						  <option value="1">Gilligan's Island</option>
+						  <option value="2">Mission: Impossible</option>
+						  <option value="3">Star Trek</option>
+						  <option value="4" selected>Monday Night Football</option>
+						  <option value="5" selected>NCAA March Madness</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="Place your order" required >
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+
+</html>
